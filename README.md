@@ -121,7 +121,7 @@ From this example, it's clear that the first argument passed to the `ClassCycler
 
 All in all, configuring and running the `ClassCycler` in this manner performs the necessary CSS class-switching changes in a _single generated callback_ that is invoked on every interval of the cycle.
 
-Lastly, the default start index, interval duration, and timeout duration are `0`, `1000`, and `30000`, respectively. You can pass an optional `config` argument to customize these configurations.
+Lastly, the default start index, interval duration, and timeout duration are `0`, `1000`, and `30000`, respectively. You can pass an optional `config` argument to customize these configurations. (Also, passing in a key-value pair of `timeoutDuration: null` prevents the timeout and makes the `ClassCycler` run perpetually.)
 
 ## Whew
 
