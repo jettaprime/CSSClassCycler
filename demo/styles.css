@@ -1,0 +1,61 @@
+html,
+body,
+.parent {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font: 14px;
+}
+
+.parent {
+  position: relative;
+}
+
+.parent,
+.minimap,
+.progress {
+  display: flex;
+}
+
+.minimap {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  height: 10%;
+  width: 10%;
+  border: 0.5em solid #ff4f4f;
+}
+
+.progress {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  flex-direction: column-reverse;
+}
+
+.bubble {
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+  border: 0.25em solid #6edb6e;
+  background-color: #6edb6e;
+  margin: 0.25em;
+}
+
+.bubble.filled {
+  background-color: #0e660e;
+  border: 0.25em solid #0e660e;
+}
+
+.child,
+.tile {
+  border: 1px solid #6edb6e;
+  background-color: #6edb6e;
+  flex: 1 1 0;
+}
+
+.child.red-background.red-border,
+.tile.red-background.red-border {
+  border: 1px solid #ff4f4f;
+  background-color: #ff4f4f;
+}
