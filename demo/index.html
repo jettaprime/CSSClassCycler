@@ -31,10 +31,17 @@
         var minimap = document.querySelector('.minimap');
         var progress = document.querySelector('.progress');
 
-        var cycle = new ClassCycler({
+        var cycle = new ClassCycler([{
           parentEl: parent,
-          listenerHost: 'child'
-        }, [{
+          listenerHost: 'child',
+          main: true
+        }, {
+          parentEl: minimap,
+          listenerHost: 'tile'
+        }, {
+          parentEl: progress,
+          listenerHost: 'bubble'
+        }], [{
           locator: 'child',
           toggle: 'red-background red-border',
           parentEl: parent
@@ -48,7 +55,7 @@
           parentEl: progress
         }], {
           startIdx: 2,
-          timeoutDuration: 5000,
+          timeoutDuration: null,
           intervalDuration: 750
         });
 

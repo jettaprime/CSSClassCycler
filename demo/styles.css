@@ -23,7 +23,7 @@ body,
   right: 1em;
   height: 10%;
   width: 10%;
-  border: 0.5em solid #ff4f4f;
+  border: 0.5em solid #0e660e;
 }
 
 .progress {
@@ -37,8 +37,8 @@ body,
   height: 1em;
   width: 1em;
   border-radius: 50%;
-  border: 0.25em solid #6edb6e;
-  background-color: #6edb6e;
+  border: 0.25em solid #0e660e;
+  background-color: none;
   margin: 0.25em;
 }
 
