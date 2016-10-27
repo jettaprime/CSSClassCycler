@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Class Cycler Demo</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" media="screen" charset="utf-8">
+    <script src="../lib/CSSClassCycler.js"></script>
+  </head>
+
+  <body>
+    <div class="parent">
+      <div class="child">
+        <span class="notes">This is a simple example.</span>
+      </div>
+      <div class="child">
+        <span class="notes">Hovering the mouse cursor over a cycled element should pause the cycle on that element.</span>
+      </div>
+      <div class="child">
+        <span class="notes">Moving the mouse cursor away from any cycled element should resume the cycle.</span>
+      </div>
+    </div>
+
+    <script type="text/javascript" charset="utf-8">
+      var parent = document.querySelector('.parent');
+      var cycle = new ClassCycler(parent, 'red-background red-border');
+      cycle.run();
+    </script>
+  </body>
+</html>

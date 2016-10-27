@@ -2,17 +2,23 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Class Cycler Demo</title>
-    <link rel="stylesheet" href="styles.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="styles.css" type="text/css" media="screen" charset="utf-8">
     <script src="../lib/CSSClassCycler.js"></script>
   </head>
 
   <body>
     <div class="parent">
-      <div class="child"></div>
-      <div class="child"></div>
-      <div class="child"></div>
+      <div class="child">
+        <span class="notes">Hovering over the cycled element pauses the cycle on the bubble that corresponds in place with the element.</span>
+      </div>
+      <div class="child">
+        <span class="notes">This is a slightly more elaborate example. The cycle runs through corresponding groups of elements.</span>
+      </div>
+      <div class="child">
+        <span class="notes">Hovering over the cycled element should also pause the cycle on the minimap tile that corresponds in place with the element.</span>
+      </div>
 
       <div class="minimap">
         <div class="tile"></div>
@@ -32,17 +38,10 @@
       var minimap = document.querySelector('.minimap');
       var progress = document.querySelector('.progress');
 
-      var cycle = new ClassCycler([{
+      var cycle = new ClassCycler({
         parentEl: parent,
         listenerHost: 'child',
-        main: true
-      }, {
-        parentEl: minimap,
-        listenerHost: 'tile'
-      }, {
-        parentEl: progress,
-        listenerHost: 'bubble'
-      }], [{
+      }, [{
         locator: 'child',
         toggle: 'red-background red-border',
         parentEl: parent
@@ -56,7 +55,7 @@
         parentEl: progress
       }], {
         startIdx: 2,
-        timeoutDuration: 10000,
+        timeoutDuration: null,
         intervalDuration: 750
       });
 

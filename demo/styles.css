@@ -1,14 +1,19 @@
 html,
-body,
-.parent {
+body {
   margin: 0;
   height: 100%;
   width: 100%;
-  font: 14px;
+  font: 20px sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0e660e;
 }
 
 .parent {
   position: relative;
+  height: 75%;
+  width: 75%;
 }
 
 .parent,
@@ -47,6 +52,12 @@ body,
   border: 0.25em solid #0e660e;
 }
 
+.child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .child,
 .tile {
   border: 1px solid #6edb6e;
@@ -58,4 +69,12 @@ body,
 .tile.red-background.red-border {
   border: 1px solid #ff4f4f;
   background-color: #ff4f4f;
+}
+
+.child.red-background.red-border {
+  color: #efefef;
+}
+
+.notes {
+  margin: 1em;
 }
