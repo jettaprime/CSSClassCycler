@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css" type="text/css" media="screen" title="no title" charset="utf-8">
     <script src="../lib/CSSClassCycler.js"></script>
   </head>
+
   <body>
     <div class="parent">
       <div class="child"></div>
@@ -26,40 +27,40 @@
       </div>
     </div>
 
-      <script type="text/javascript" charset="utf-8">
-        var parent = document.querySelector('.parent');
-        var minimap = document.querySelector('.minimap');
-        var progress = document.querySelector('.progress');
+    <script type="text/javascript" charset="utf-8">
+      var parent = document.querySelector('.parent');
+      var minimap = document.querySelector('.minimap');
+      var progress = document.querySelector('.progress');
 
-        var cycle = new ClassCycler([{
-          parentEl: parent,
-          listenerHost: 'child',
-          main: true
-        }, {
-          parentEl: minimap,
-          listenerHost: 'tile'
-        }, {
-          parentEl: progress,
-          listenerHost: 'bubble'
-        }], [{
-          locator: 'child',
-          toggle: 'red-background red-border',
-          parentEl: parent
-        }, {
-          locator: 'tile',
-          toggle: 'red-background red-border',
-          parentEl: minimap
-        }, {
-          locator: 'bubble',
-          toggle: 'filled',
-          parentEl: progress
-        }], {
-          startIdx: 2,
-          timeoutDuration: null,
-          intervalDuration: 750
-        });
+      var cycle = new ClassCycler([{
+        parentEl: parent,
+        listenerHost: 'child',
+        main: true
+      }, {
+        parentEl: minimap,
+        listenerHost: 'tile'
+      }, {
+        parentEl: progress,
+        listenerHost: 'bubble'
+      }], [{
+        locator: 'child',
+        toggle: 'red-background red-border',
+        parentEl: parent
+      }, {
+        locator: 'tile',
+        toggle: 'red-background red-border',
+        parentEl: minimap
+      }, {
+        locator: 'bubble',
+        toggle: 'filled',
+        parentEl: progress
+      }], {
+        startIdx: 2,
+        timeoutDuration: 10000,
+        intervalDuration: 750
+      });
 
-        cycle.run();
-      </script>
+      cycle.run();
+    </script>
   </body>
 </html>

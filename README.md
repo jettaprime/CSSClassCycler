@@ -279,3 +279,7 @@ If a `main: Element` isn't specified, the following array of class-cycling eleme
 All in all, configuring and running the `ClassCycler` in these manners of examples performs the necessary CSS class-switching changes in a _single generated callback_ that is invoked on every interval of the cycle.
 
 Have fun.
+
+## Last Note
+
+The demo and examples show configurations of the `ClassCycler` that pass `Element`'s as `parentEl`'s. Passing in a string instead is valid; doing so will `querySelector` the `document` for an element with a class name of that string. This may or may not achieve the intended effect.
