@@ -2,6 +2,8 @@
 
 This utility enables the DOM cycling of toggled CSS classes based on a given parent element and specified macros. It also responds to the `mouseover` and `mouseout` events on cycled elements.
 
+![Demo Animation](./demo/demo.gif)
+
 ## Use Cases
 
 Using the cycler can be fairly simple, yet dynamically customized, should the view need a more flexible cycling pattern.
