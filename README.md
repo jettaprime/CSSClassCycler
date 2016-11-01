@@ -98,7 +98,7 @@ The markup of your component looks something like this:
 
 You want to add the `mouseover` and `mouseon` event listeners only on `.parent`'s immediate `.child`ren.
 
-You also want all `.foo`'s to be cycled with a `.bar` class, all `.bob`'s to be cycled with a `.joe` class, and all `.hello`'s to be cycled with a `.world` class, all in the same iteration or interval of the `ClassCycler`. Your script can configure the `ClassCycler` as such:
+You also want all `.foo`'s to be cycled with a `.bar` class, all `.bob`'s to be cycled with a `.joe` class, and all `.hello`'s to be cycled with a `.world` class, all in the same interval of the `ClassCycler`. Your script can configure the `ClassCycler` as such:
 
 ```javascript
 // parent is the .parent Element
@@ -154,7 +154,7 @@ The markup of your component looks something like this:
 </div>
 ```
 
-You want all `.child`ren to be cycled with a `.sick` class, all `.world`'s to be cycled with an `.order` class, all `.joe`'s to be cycled with a `.sloppy` class, and all `bar`'s to be cycled with a `.baz` class, all in the same iteration or interval of the `ClassCycler`.
+You want all `.child`ren to be cycled with a `.sick` class, all `.world`'s to be cycled with an `.order` class, all `.joe`'s to be cycled with a `.sloppy` class, and all `bar`'s to be cycled with a `.baz` class, all in the same interval of the `ClassCycler`.
 
 At the same time, you want to attach the mouseover and mouseon event listeners to every cycled element, pausing and resuming the `ClassCycler` at whichever index corresponds to the hovered or exited cycled element. Your script can configure the `ClassCycler` as such:
 
