@@ -1,0 +1,30 @@
+{
+  "name": "css-class-cycler",
+  "version": "0.0.1",
+  "description": "A DOM cycler for toggling CSS classes within a specified collection or collections of elements.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yirmiyahu/CSSClassCycler.git"
+  },
+  "author": "Jeremy Tan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yirmiyahu/CSSClassCycler/issues"
+  },
+  "homepage": "https://github.com/yirmiyahu/CSSClassCycler#readme",
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-lodash": "^3.2.11",
+    "babel-preset-latest": "^6.16.0",
+    "lodash-webpack-plugin": "^0.10.7",
+    "webpack": "^1.14.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
