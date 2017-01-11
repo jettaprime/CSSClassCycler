@@ -2,6 +2,12 @@
 
 This utility enables the DOM cycling of toggled CSS classes based on a given parent element and specified macros. It also responds to the `mouseover` and `mouseout` events on cycled elements.
 
+## Install
+
+```bash
+npm install --save css-class-cycler
+```
+
 ![Demo Animation](./demo/demo.gif)
 
 ## Use Cases
