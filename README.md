@@ -282,13 +282,14 @@ All in all, configuring and running the `ClassCycler` in these manners of exampl
 
 You can pass an optional `config` argument to customize the configuration of the `Cycler`:
 
-Keys               | Value Types  | Description
------------------- | ------------ | -----------
-`startIdx`         | `number`     | Determines the starting index of the `Cycler`. Defaults to `0`.
-`intervalDuration` | `number`     | The duration of each cycle interval in milliseconds. Defaults to `1000`.
-`timeoutDuration`  | `number\|null` | The duration of the whole cycle in milliseconds. Defaults to `30000`. Passing in a `null` prevents any timeout and makes the `ClassCycler` run perpetually.
-`reverseDirection` | `boolean`    | The direction in which the `Cycler` steps. Defaults to _incremental iteration_ as opposed to _decremental iteration_.
-`stepDistance`     | `number`     | The distance by which the `Cycler` steps. Defaults to `1`.
+Keys                 | Value Types    | Description
+-------------------- | -------------- | ---
+`startIdx`           | `number`       | The starting index of the `Cycler`. Defaults to `0`.
+`intervalDuration`   | `number`       | The duration of each cycle interval in milliseconds. Defaults to `1000`.
+`timeoutDuration`    | `number\|null` | The duration of the whole cycle in milliseconds. Defaults to `30000`. Passing in a `null` prevents any timeout and makes the `ClassCycler` run perpetually.
+`reverseDirection`   | `boolean`      | The direction in which the `Cycler` steps. Defaults to _incremental iteration_ as opposed to _decremental iteration_.
+`stepDistance`       | `number`       | The distance by which the `Cycler` steps. Defaults to `1`.
+`additionalCallback` | `function`     | A specified callback that is invoked on each cycle interval.
 
 The demos and examples show configurations of the `ClassCycler` that pass `Element`'s as `parentEl`'s. Passing in a string instead is valid; doing so will `querySelector` the `document` for an element with a class name of that string. This may or may not achieve the intended effect.
 
